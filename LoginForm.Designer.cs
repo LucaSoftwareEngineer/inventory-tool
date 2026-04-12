@@ -1,6 +1,6 @@
 ﻿namespace inventory_tool
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
