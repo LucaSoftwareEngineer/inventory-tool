@@ -15,6 +15,7 @@ namespace inventory_tool.Data
         }
 
         public DbSet<Amministratore> Amministratori { get; set; }
+        public DbSet<Materiale> Materiali { get; set; }
 
     }
 }

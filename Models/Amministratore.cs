@@ -27,5 +27,7 @@ namespace inventory_tool.Models
         [Column("amm_password")]
         public string Password { get; set; }
 
+        public virtual ICollection<Materiale> Materiali { get; set; } = new List<Materiale>();
+
     }
 }
