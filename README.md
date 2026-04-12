@@ -5,7 +5,7 @@
 # Feature Da fare / In corso / Completate
 | Feature | Stato |
 | :--- | :--- |
-| Amministratore: Login | ⏳ Da fare |
+| Amministratore: Login | ✅ Completato |
 | Amministratore: Inserimento del materiale | ⏳ Da fare |
 | Amministratore: Ricerca del materiale | ⏳ Da fare |
 | Amministratore: Rimozione del materiale | ⏳ Da fare |
