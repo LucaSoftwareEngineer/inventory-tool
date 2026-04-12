@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CyberCrypt;
 using inventory_tool.Data;
+using inventory_tool.Services;
 
 namespace inventory_tool
 {
@@ -26,23 +27,14 @@ namespace inventory_tool
             var username = usernameInput.Text;
             var password = _SHA.SHA512Hash(passwordInput.Text);
 
-            using (var db = new AppDbContext())
+            if (LoginService.login(username, password))
             {
-                var amministratore = (from a in db.Amministratori
-                                     where a.Username.Equals(username) && a.Password.Equals(password)
-                                     select a).FirstOrDefault();
-
-                if (amministratore == null)
-                {
-                    LoginNegato.Visible = true;
-                    LoginEseguito.Visible = false;
-                }
-                else 
-                {
-                    LoginNegato.Visible = false;
-                    LoginEseguito.Visible = true;
-                }
-
+                LoginNegato.Visible = false;
+                LoginEseguito.Visible = true;
+            } else
+            {
+                LoginNegato.Visible = true;
+                LoginEseguito.Visible = false;
             }
 
         }
