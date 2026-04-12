@@ -23,6 +23,8 @@ namespace inventory_tool.Services
                 }
                 else
                 {
+                    UserSession.Username = amministratore.Username;
+                    UserSession.Ruolo = "Amministratore";
                     return true;
                 }
             }
