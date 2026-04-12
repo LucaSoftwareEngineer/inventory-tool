@@ -1,4 +1,5 @@
-﻿using System;
+﻿using inventory_tool.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -12,5 +13,8 @@ namespace inventory_tool.Data
         public AppDbContext() : base("name=db_locale")
         {
         }
+
+        public DbSet<Amministratore> Amministratori { get; set; }
+
     }
 }
