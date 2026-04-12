@@ -66,11 +66,23 @@
       <DependentUpon>202604121528558_MaterialeMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Materiale.cs" />
+    <Compile Include="Views\AggiungiMaterialeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AggiungiMaterialeForm.Designer.cs">
+      <DependentUpon>AggiungiMaterialeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ElencoMaterialeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ElencoMaterialeForm.Designer.cs">
+      <DependentUpon>ElencoMaterialeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -90,8 +102,14 @@
     <EmbeddedResource Include="Migrations\202604121528558_MaterialeMigration.resx">
       <DependentUpon>202604121528558_MaterialeMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AggiungiMaterialeForm.resx">
+      <DependentUpon>AggiungiMaterialeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ElencoMaterialeForm.resx">
+      <DependentUpon>ElencoMaterialeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
