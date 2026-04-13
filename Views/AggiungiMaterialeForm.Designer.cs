@@ -35,6 +35,13 @@
             this.dashboardSideButton = new System.Windows.Forms.Button();
             this.aggiungiMaterialeSideButton = new System.Windows.Forms.Button();
             this.elencoMaterialeSideButton = new System.Windows.Forms.Button();
+            this.descrizioneInput = new System.Windows.Forms.TextBox();
+            this.quantitaInput = new System.Windows.Forms.TextBox();
+            this.descrizioneLabel = new System.Windows.Forms.Label();
+            this.quantitaLabel = new System.Windows.Forms.Label();
+            this.aggiungiMateriale = new System.Windows.Forms.Button();
+            this.esitoPositivo = new System.Windows.Forms.Label();
+            this.esitoNegativo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,11 +126,80 @@
             this.elencoMaterialeSideButton.UseVisualStyleBackColor = false;
             this.elencoMaterialeSideButton.Click += new System.EventHandler(this.elencoMaterialeSideButton_Click);
             // 
+            // descrizioneInput
+            // 
+            this.descrizioneInput.Location = new System.Drawing.Point(363, 99);
+            this.descrizioneInput.Name = "descrizioneInput";
+            this.descrizioneInput.Size = new System.Drawing.Size(100, 20);
+            this.descrizioneInput.TabIndex = 5;
+            // 
+            // quantitaInput
+            // 
+            this.quantitaInput.Location = new System.Drawing.Point(363, 146);
+            this.quantitaInput.Name = "quantitaInput";
+            this.quantitaInput.Size = new System.Drawing.Size(100, 20);
+            this.quantitaInput.TabIndex = 6;
+            // 
+            // descrizioneLabel
+            // 
+            this.descrizioneLabel.AutoSize = true;
+            this.descrizioneLabel.Location = new System.Drawing.Point(289, 102);
+            this.descrizioneLabel.Name = "descrizioneLabel";
+            this.descrizioneLabel.Size = new System.Drawing.Size(65, 13);
+            this.descrizioneLabel.TabIndex = 7;
+            this.descrizioneLabel.Text = "Descrizione:";
+            // 
+            // quantitaLabel
+            // 
+            this.quantitaLabel.AutoSize = true;
+            this.quantitaLabel.Location = new System.Drawing.Point(289, 149);
+            this.quantitaLabel.Name = "quantitaLabel";
+            this.quantitaLabel.Size = new System.Drawing.Size(50, 13);
+            this.quantitaLabel.TabIndex = 8;
+            this.quantitaLabel.Text = "Quantità:";
+            // 
+            // aggiungiMateriale
+            // 
+            this.aggiungiMateriale.Location = new System.Drawing.Point(292, 196);
+            this.aggiungiMateriale.Name = "aggiungiMateriale";
+            this.aggiungiMateriale.Size = new System.Drawing.Size(171, 23);
+            this.aggiungiMateriale.TabIndex = 9;
+            this.aggiungiMateriale.Text = "Aggiungi";
+            this.aggiungiMateriale.UseVisualStyleBackColor = true;
+            this.aggiungiMateriale.Click += new System.EventHandler(this.aggiungiMateriale_Click);
+            // 
+            // esitoPositivo
+            // 
+            this.esitoPositivo.AutoSize = true;
+            this.esitoPositivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.esitoPositivo.Location = new System.Drawing.Point(292, 246);
+            this.esitoPositivo.Name = "esitoPositivo";
+            this.esitoPositivo.Size = new System.Drawing.Size(94, 13);
+            this.esitoPositivo.TabIndex = 10;
+            this.esitoPositivo.Text = "Materiale aggiunto";
+            // 
+            // esitoNegativo
+            // 
+            this.esitoNegativo.AutoSize = true;
+            this.esitoNegativo.ForeColor = System.Drawing.Color.Red;
+            this.esitoNegativo.Location = new System.Drawing.Point(292, 246);
+            this.esitoNegativo.Name = "esitoNegativo";
+            this.esitoNegativo.Size = new System.Drawing.Size(115, 13);
+            this.esitoNegativo.TabIndex = 11;
+            this.esitoNegativo.Text = "Materiale non aggiunto";
+            // 
             // AggiungiMaterialeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.esitoNegativo);
+            this.Controls.Add(this.esitoPositivo);
+            this.Controls.Add(this.aggiungiMateriale);
+            this.Controls.Add(this.quantitaLabel);
+            this.Controls.Add(this.descrizioneLabel);
+            this.Controls.Add(this.quantitaInput);
+            this.Controls.Add(this.descrizioneInput);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "AggiungiMaterialeForm";
@@ -134,6 +210,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -146,5 +223,12 @@
         private System.Windows.Forms.Button dashboardSideButton;
         private System.Windows.Forms.Button aggiungiMaterialeSideButton;
         private System.Windows.Forms.Button elencoMaterialeSideButton;
+        private System.Windows.Forms.TextBox descrizioneInput;
+        private System.Windows.Forms.TextBox quantitaInput;
+        private System.Windows.Forms.Label descrizioneLabel;
+        private System.Windows.Forms.Label quantitaLabel;
+        private System.Windows.Forms.Button aggiungiMateriale;
+        private System.Windows.Forms.Label esitoPositivo;
+        private System.Windows.Forms.Label esitoNegativo;
     }
 }
