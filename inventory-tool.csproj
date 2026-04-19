@@ -60,12 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\AppDbContext.cs" />
+    <Compile Include="Data\MaterialeViewModel.cs" />
     <Compile Include="Data\UserSession.cs" />
     <Compile Include="Migrations\202604121528558_MaterialeMigration.cs" />
     <Compile Include="Migrations\202604121528558_MaterialeMigration.Designer.cs">
       <DependentUpon>202604121528558_MaterialeMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Materiale.cs" />
+    <Compile Include="Services\ElencoMaterialeService.cs" />
     <Compile Include="Views\AggiungiMaterialeForm.cs">
       <SubType>Form</SubType>
     </Compile>
