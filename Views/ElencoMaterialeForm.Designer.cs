@@ -35,9 +35,11 @@
             this.dashboardSideButton = new System.Windows.Forms.Button();
             this.aggiungiMaterialeSideButton = new System.Windows.Forms.Button();
             this.elencoMaterialeSideButton = new System.Windows.Forms.Button();
+            this.dgvElencoMateriale = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvElencoMateriale)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,11 +121,20 @@
             this.elencoMaterialeSideButton.UseVisualStyleBackColor = false;
             this.elencoMaterialeSideButton.Click += new System.EventHandler(this.elencoMaterialeSideButton_Click);
             // 
+            // dgvElencoMateriale
+            // 
+            this.dgvElencoMateriale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvElencoMateriale.Location = new System.Drawing.Point(218, 60);
+            this.dgvElencoMateriale.Name = "dgvElencoMateriale";
+            this.dgvElencoMateriale.Size = new System.Drawing.Size(558, 365);
+            this.dgvElencoMateriale.TabIndex = 5;
+            // 
             // ElencoMaterialeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvElencoMateriale);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "ElencoMaterialeForm";
@@ -133,6 +144,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvElencoMateriale)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,5 +158,6 @@
         private System.Windows.Forms.Button dashboardSideButton;
         private System.Windows.Forms.Button aggiungiMaterialeSideButton;
         private System.Windows.Forms.Button elencoMaterialeSideButton;
+        private System.Windows.Forms.DataGridView dgvElencoMateriale;
     }
 }

@@ -24,6 +24,20 @@ namespace inventory_tool.Views
                 this.Hide();
             }
 
+            using (var db = new AppDbContext())
+            {
+                dgvElencoMateriale.DataSource = (from m in db.Materiali
+                                                join a in db.Amministratori on m.IdAmministratore equals a.Id
+                                                where a.Username == UserSession.Username
+                                                select new
+                                                {
+                                                    m.Id,
+                                                    m.Descrizione,
+                                                    m.Quantita,
+                                                    Amministratore = a.Nome + " " + a.Cognome
+                                                }).ToList();
+            }
+
         }
 
         private void aggiungiMaterialeSideButton_Click(object sender, EventArgs e)
