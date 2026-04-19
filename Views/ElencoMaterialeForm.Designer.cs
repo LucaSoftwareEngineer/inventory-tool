@@ -124,9 +124,9 @@
             // dgvElencoMateriale
             // 
             this.dgvElencoMateriale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvElencoMateriale.Location = new System.Drawing.Point(218, 60);
+            this.dgvElencoMateriale.Location = new System.Drawing.Point(223, 62);
             this.dgvElencoMateriale.Name = "dgvElencoMateriale";
-            this.dgvElencoMateriale.Size = new System.Drawing.Size(558, 365);
+            this.dgvElencoMateriale.Size = new System.Drawing.Size(556, 365);
             this.dgvElencoMateriale.TabIndex = 5;
             // 
             // ElencoMaterialeForm

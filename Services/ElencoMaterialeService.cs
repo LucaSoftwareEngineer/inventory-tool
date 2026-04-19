@@ -14,7 +14,7 @@ namespace inventory_tool.Services
                     from m in db.Materiali
                     join a in db.Amministratori on m.IdAmministratore equals a.Id
                     where a.Username == UserSession.Username
-                    select new MaterialeViewModel // Usiamo la classe creata sopra
+                    select new MaterialeViewModel
                     {
                         Id = m.Id,
                         Descrizione = m.Descrizione,
