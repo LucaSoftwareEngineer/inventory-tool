@@ -6,8 +6,8 @@
 | Feature | Stato |
 | :--- | :--- |
 | Amministratore: Login | ✅ Completato |
-| Amministratore: Inserimento del materiale | ⏳ Da fare |
+| Amministratore: Inserimento del materiale | ✅ Completato |
 | Amministratore: Ricerca del materiale | ⏳ Da fare |
 | Amministratore: Rimozione del materiale | ⏳ Da fare |
 | Amministratore: Modifica del materiale | ⏳ Da fare |
-| Amministratore: Visualizzazione del materiale (elenco e singolo) | ⏳ Da fare |
+| Amministratore: Visualizzazione del materiale (elenco) | ✅ Completato |
