@@ -7,7 +7,7 @@
 | :--- | :--- |
 | Amministratore: Login | ✅ Completato |
 | Amministratore: Inserimento del materiale | ✅ Completato |
-| Amministratore: Ricerca del materiale | ⏳ Da fare |
-| Amministratore: Rimozione del materiale | ⏳ Da fare |
-| Amministratore: Modifica del materiale | ⏳ Da fare |
+| Amministratore: Ricerca del materiale | ✅ Completato |
+| Amministratore: Rimozione del materiale | ✅ Completato |
+| Amministratore: Modifica del materiale | ✅ Completato |
 | Amministratore: Visualizzazione del materiale (elenco) | ✅ Completato |
