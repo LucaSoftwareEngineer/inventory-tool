@@ -28,6 +28,12 @@ namespace inventory_tool.Views
                 this.Hide();
             }
 
+            InventoryTheme.ApplyMainShell(this, panel1, panel2, panel3, label1,
+                dashboardSideButton, elencoMaterialeSideButton, aggiungiMaterialeSideButton,
+                aggiungiMaterialeSideButton);
+            InventoryTheme.ApplyAddMaterial(this, descrizioneLabel, quantitaLabel,
+                descrizioneInput, quantitaInput, aggiungiMateriale, esitoPositivo, esitoNegativo);
+
         }
 
         private void aggiungiMaterialeSideButton_Click(object sender, EventArgs e)

@@ -26,6 +26,10 @@ namespace inventory_tool.Views
             }
 
             dgvElencoMateriale.DataSource = ElencoMaterialeService.GetElencoMateriale();
+            InventoryTheme.ApplyMainShell(this, panel1, panel2, panel3, label1,
+                dashboardSideButton, elencoMaterialeSideButton, aggiungiMaterialeSideButton,
+                elencoMaterialeSideButton);
+            InventoryTheme.ApplyMaterialList(this, dgvElencoMateriale);
 
         }
 

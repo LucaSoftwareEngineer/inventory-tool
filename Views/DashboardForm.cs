@@ -25,7 +25,10 @@ namespace inventory_tool.Views
             }
 
             benvenutoLabel.Text = $"Bentornato, {UserSession.Username}! \nSeleziona un'opzione dal menu a sinistra.";
-            benvenutoLabel.Font = new Font("Arial", 14, FontStyle.Bold);
+            InventoryTheme.ApplyMainShell(this, panel1, panel2, panel3, label1,
+                dashboardSideButton, elencoMaterialeSideButton, aggiungiMaterialeSideButton,
+                dashboardSideButton);
+            InventoryTheme.ApplyDashboard(this, benvenutoLabel);
 
         }
 

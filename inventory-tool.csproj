@@ -86,6 +86,7 @@
     <Compile Include="Views\ElencoMaterialeForm.Designer.cs">
       <DependentUpon>ElencoMaterialeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\InventoryTheme.cs" />
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

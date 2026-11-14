@@ -21,6 +21,8 @@ namespace inventory_tool
             InitializeComponent();
             LoginNegato.Visible = false;
             LoginEseguito.Visible = false;
+            Views.InventoryTheme.ApplyLogin(this, label1, label2, usernameInput, passwordInput,
+                accediButton, LoginNegato, LoginEseguito);
         }
 
         private async void accediButton_Click(object sender, EventArgs e)
